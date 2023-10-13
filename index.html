@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Header-14</title>
+</head>
+<body>
+    <div class="main_container">
+        
+        <div class="inner_container">
+            <nav class="navbar">
+                <div class="l_nav">Startup 3</div>
+                <div class="r_nav">
+                    <a href="#" style="color: #a1a1b0" class="nav_items" >Overview</a>
+                    <a href="#" class="nav_items">Prices</a>
+                    <a href="#" class="nav_items">Blog</a>
+                    <a href="#"class="nav_items">Feedback</a>
+                    <a href="#" class="nav_items active">Purchase</a>
+                </div>
+
+                <div class="more_btn" onclick="openMenu()" >
+                    <div class="more_lines"></div>
+                    <div class="more_lines"></div>
+                    <div class="more_lines"></div>
+                </div>
+                <div class="overlay" id="menu-overlay" >
+                    <div class="close_btn" onclick="closeMenu()" >
+                        X
+                    </div>
+                    <div class="hidden_items">
+                        <a href="#" class="h_nav_items" onclick="closeMenu()"  >Overview</a>
+                        <a href="#" class="h_nav_items" onclick="closeMenu()" >Prices</a>
+                        <a href="#" class="h_nav_items" onclick="closeMenu()" >Blog</a>
+                        <a href="#"class="h_nav_items" onclick="closeMenu()" >Feedback</a>
+                        <a href="#" class="h_nav_items last" onclick="closeMenu()" >Purchase</a>
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <div class="block">
+                <div class="left_block">
+                    <p class="heading"  >Generate <br> Awesome Web <br> Pages</p>
+                    <p class="para">The most important part of the Startup is the samples. The samples form a set of 25 usable pages you can use as is or you can add new blocks.</p>
+                    <button>
+                        Learn More
+                    </button>
+                </div>
+                <div class="right_block">
+                    <div class="inner_right_block">
+
+                        <p class="heading">Sign Up Now</p>
+                        <input type="email" class="ip"  placeholder="Your email" >
+                        <input type="password" class="ip" placeholder="Your password" >
+    
+                        <div class="terms_block">
+                            <input class="ok" type="checkbox" name="" id="" checked > 
+                            <p>I agree to the Terms of Service</p>
+                        </div>
+    
+                        <button class="sin">
+                            Sign In
+                        </button>
+
+                        <div class="saparator">
+                            <div class="lines"></div>
+                            <p>or</p>
+                            <div class="lines"></div>
+                        </div>
+
+                        <button class="lit">
+                            Login via Twitter
+                        </button>
+
+                        <p class="acc">
+                            Do you have an Account? <a href="#" >Sign in</a>
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        const openMenu = () =>{
+            document.getElementById("menu-overlay").style.left = "0rem"
+        }
+        const closeMenu = () =>{
+            document.getElementById("menu-overlay").style.left = "-50rem"
+        }
+    </script>
+
+</body>
+</html>
